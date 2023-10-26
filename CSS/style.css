@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,600;1,300&family=Montserrat:ital,wght@0,100;1,200;1,400;1,500&family=Open+Sans:wght@300;500&family=Outfit:wght@300;400;600&family=Roboto:ital,wght@0,300;0,500;1,300;1,500&family=Trochut:ital,wght@0,400;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+.container {
+ 
+  
+
+}
+  
+ 
+
+/* .first{    
+    font-size: 10px;
+    
+    justify-content: space-between;
+    flex-direction: column  ;
+} */
+
+.navba {
+    position:static;
+  background-color: #000000;
+  display: flex;
+  font-weight: 300;
+  align-items: flex-start;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 40px 12px 40px 12px;
+  gap: 10px;
+  box-shadow: 5px 0px 10px 0px #000000 rgb(0, 0, 0, 0.5);
+}
+.navba li button {
+  flex: start;
+  list-style-type: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 1px solid #1f1815;
+  padding: 22px 22px;
+  justify-content: space-between;
+  background: none;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+.encabezado h3 {
+  color: #2a5b45;
+  display: block;
+  font-size: 1.17em;  
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.encabezado h1 {
+  color: #010704;
+  
+  
+}
+.encabezado p {
+  display: flex;
+  font-size: 16px;
+}
+
+.button {
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 15px 15px;
+  background: #908181;
+  color: #fff;
+  justify-content: space-evenly;
+}
+
+
+.image-background{
+    background-image: url(assets/IMG/imagencafe.jpeg);
+       background-size: cover;
+    background-repeat: no-repeat;   
+    height: 400px;
+    width: 300px;
+    flex: 1 1 1;
+    
+    
+}
+
+/* .centro {
+  display: flex;
+  justify-content:space-around;
+} */
+
+#fonts {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 9em 0em;
+  gap: 10px;
+  height: 40rem;
+  width: 100%;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.caricatura {
+  display: flex;
+  justify-content: space-around;
+}
+
+.caricatura {
+    background-image: url(assets/IMG/Illustration1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 10%;
+   flex-direction: row;
+    
+
+  }
+
+  .buttons{
+    display: flex;
+  
+    
+
+  }
+
+  .btn-1{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding: 2rem;
+    margin: 20px;
+    background: #434f49;
+    color:#fff
+    
+  }  
+  .variedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alineación vertical al centro */
+    align-items: center; /* Alineación horizontal al centro */
+    height: 100%; /* Puedes ajustar esto según tus necesidades */
+    gap: 20px;
+    border-radius: 2px;
+}
+
+.variedades  .caffe-1 .caffe-2.caffe-3 .caffe-4{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.variedades {
+    text-align: center; /* Centra el texto y el contenido horizontalmente */
+    padding: 20px; /* Espacio alrededor de la sección */
+    
+}
+
+.caffe-1 img {
+    max-width: 100%; /* Asegura que la imagen se adapte al contenedor */
+    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+}
+
+.precio {
+    font-size: 24px; /* Aumenta el tamaño del precio */
+    margin: 10px 0; /* Espacio arriba y abajo del precio */
+}
+
+button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espacio alrededor del texto del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo del botón cuando se pasa el ratón sobre él */
+}
