@@ -1,186 +1,260 @@
 @import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,600;1,300&family=Montserrat:ital,wght@0,100;1,200;1,400;1,500&family=Open+Sans:wght@300;500&family=Outfit:wght@300;400;600&family=Roboto:ital,wght@0,300;0,500;1,300;1,500&family=Trochut:ital,wght@0,400;0,700;1,400&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* { 
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Outfit;
 }
 
-.container {
- 
-  
-
+.first {
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  flex-direction: column;
 }
-  
- 
-
-/* .first{    
-    font-size: 10px;
-    
-    justify-content: space-between;
-    flex-direction: column  ;
-} */
 
 .navba {
-    position:static;
-  background-color: #000000;
+  position: static;
+  background-color: #000;
   display: flex;
-  font-weight: 300;
-  align-items: flex-start;
-  list-style-type: none;
   justify-content: space-evenly;
   align-items: start;
-  padding: 40px 12px 40px 12px;
-  gap: 10px;
-  box-shadow: 5px 0px 10px 0px #000000 rgb(0, 0, 0, 0.5);
+  padding: 4px;
+  gap: 1px;
 }
+
+.navba.carroCompra {
+  display: flex;
+  padding-top: 5px;
+  padding: 10px;
+  align-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;    /* Puedes agregar otros estilos según lo necesites */
+}
+nav a:hover {
+  color: rgb(92, 138, 168);
+  text-shadow:valid;
+  font-size:inherit;
+}
+
+
+
 .navba li button {
-  flex: start;
   list-style-type: none;
   font-size: 20px;
   color: #fff;
   border-radius: 1px solid #1f1815;
-  padding: 22px 22px;
+  padding: 20px;
   justify-content: space-between;
   background: none;
   border-style: hidden;
   cursor: pointer;
 }
 
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 40px;
+  gap: 20px;
+  align-items: center;
+}
+
 .encabezado h3 {
-  color: #2a5b45;
-  display: block;
-  font-size: 1.17em;  
+  color: #147444;
   font-size: 20px;
-  font-weight: bold;
 }
 
 .encabezado h1 {
   color: #010704;
-  
-  
+  font-size: 56px;
 }
+
 .encabezado p {
   display: flex;
-  font-size: 16px;
+  font-size: 29px;
 }
 
 .button {
   justify-content: flex-end;
-  align-items: flex-end;
   gap: 20px;
-  padding: 15px 15px;
+  padding: 15px;
   background: #908181;
   color: #fff;
-  justify-content: space-evenly;
+  flex-direction: column-reverse;
 }
 
-
-.image-background{
-    background-image: url(assets/IMG/imagencafe.jpeg);
-       background-size: cover;
-    background-repeat: no-repeat;   
-    height: 400px;
-    width: 300px;
-    flex: 1 1 1;
-    
-    
+.btn-nav {
+  justify-content: center;
 }
 
-/* .centro {
-  display: flex;
-  justify-content:space-around;
-} */
-
-#fonts {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0px 9em 0em;
-  gap: 10px;
-  height: 40rem;
-  width: 100%;
-  position: relative;
-  padding-bottom: 10rem;
+.btn-nav .btn-1, .btn-nav .btn-2 {
+  background-color: #3fb7d4;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+  cursor: pointer;
 }
 
-.caricatura {
+.btn-nav .btn-1 {
+  background: #1F1815;
+  padding: 10px 23px;
+  align-items: flex-start;
+  border-radius: 4px;
+}
+
+.btn-nav .btn-2 {
+  background-color: #2A5B45;
+  border-radius: 4px;
+  padding: 10px 23px;
+  align-items: flex-start;
+}
+
+.imagencafefondo {
+  background-image: url('../assets/IMG/cafes/imagencafe.jpeg');
+  background-size: cover;  
+  background-position: center;
+  align-self:baseline;
+  align-self: stretch;
+  padding: 89px 45px 145px;
+}
+.botones-de-accion {
   display: flex;
+  justify-content: coloumn;
+  align-items:flex-start;
+  padding: 5% 10px;
+  justify-content:flex-start;
+  flex-direction: column;
+  
+flex: 1 0 0;
+
+}
+
+.fondcafe{
+  display: flex;
+  align-items: center ;
+  flex-direction: column-reverse
+  
+}
+.fondcafe{
+ color: #fff;
+}
+
+.imagen-centrar{
+  font-family: Outfit;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center ;
+  font-size: center;
+  padding: 5% 10px;
+  width: 300px;
+  height: 300px; 
+  border-radius: 10px;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.iconos{
+  font-family: Outfit;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  font-size: center;
+  padding: 5% 10px;
+  width: 300px;
+  height: 300px; 
+  border-radius: 10px;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.iconos{
+  display: flex;
+  flex-direction: row;
+flex-wrap: nowrap;
+align-content: stretch;
+justify-content: center;
+align-items: baseline;
+justify-content: space-evenly ;
+}
+
+.icono2{
+  
+  font-family: Outfit;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  font-size: center;
+  padding: 5% 10px;
+  width: 300px;
+  height: 300px; 
+  border-radius: 10px;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.centro {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
-
-.caricatura {
-    background-image: url(assets/IMG/Illustration1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30px;
-    width: 10%;
-   flex-direction: row;
-    
-
-  }
-
-  .buttons{
-    display: flex;
-  
-    
-
-  }
-
-  .btn-1{
-    display: flex;
-    justify-content: center;
-    gap: 36px;
-    padding: 2rem;
-    margin: 20px;
-    background: #434f49;
-    color:#fff
-    
-  }  
-  .variedades {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alineación vertical al centro */
-    align-items: center; /* Alineación horizontal al centro */
-    height: 100%; /* Puedes ajustar esto según tus necesidades */
-    gap: 20px;
-    border-radius: 2px;
+.producto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.variedades  .caffe-1 .caffe-2.caffe-3 .caffe-4{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-.variedades {
-    text-align: center; /* Centra el texto y el contenido horizontalmente */
-    padding: 20px; /* Espacio alrededor de la sección */
-    
-}
-
-.caffe-1 img {
-    max-width: 100%; /* Asegura que la imagen se adapte al contenedor */
-    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+.caffe-1, .caffe-2, .caffe-3, .caffe-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-.precio {
-    font-size: 24px; /* Aumenta el tamaño del precio */
-    margin: 10px 0; /* Espacio arriba y abajo del precio */
+.caffe-1 img, .caffe-2 img, .caffe-3 img, .caffe-4 img {
+  width: 200px;
+  height: 200px;
 }
 
-button {
-    background-color: #007BFF; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    padding: 10px 20px; /* Espacio alrededor del texto del botón */
-    border: none; /* Elimina el borde predeterminado del botón */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
-    border-radius: 5px; /* Bordes redondeados del botón */
+.caffe-1 p, .caffe-2 p, .caffe-3 p, .caffe-4 p {
+
+ padding: 5px; 
+
 }
 
-button:hover {
-    background-color: #0056b3; /* Color de fondo del botón cuando se pasa el ratón sobre él */
+.btn-añadir{
+  background-color: #034724;
+  border-radius: 5px;
+ 
+  align-items: flex-start;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.novedad{
+  text-align: center;
+  padding: 40px;
+  border-radius: 1px solid #1f1815;
+}
+
+
+.flecha{
+  background-image: url('../assets/IMG/Arrow\ narrow\ right.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 45px; 
+  display: flex; 
 }
