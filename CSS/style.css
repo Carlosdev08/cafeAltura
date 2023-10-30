@@ -273,61 +273,11 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
-/* .imagen-centrar {
-  font-family: Outfit;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  font-size: center;
-  padding: 5% 10px;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  justify-content: space-around;
-  background-color: #fff;
-} */
-/* .iconos {
-  font-family: Outfit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: center;
-  padding: 5% 10px;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  justify-content: space-around;
-  background-color: #fff;
-} */
 
-/* .iconos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: stretch;
-  justify-content: center;
-  align-items: baseline;
-  justify-content: space-evenly;
-} */
 
-/* .icono2 {
-  font-family: Outfit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: center;
-  padding: 5% 10px;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  justify-content: space-around;
-  background-color: #fff;
-} */
-/* .centro {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
+
+
+
 .producto {
   display: flex;
   justify-content: center;
@@ -596,7 +546,13 @@ form{
   font-family: Outfit;
   align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     flex-grow: 1;
+}
+
+.contact-form {
+  position: relative;
+  top: calc(3);
 }
 
 .contact-form{  
@@ -630,11 +586,17 @@ form{
   outline: none;
 }
 .contact-form select:focus{
-  border-color: #084ac4;
-  outline: none;
+  border-color: #0a2453;
+  outline:#1075e9;
 }
 
+.contact-form input:focus {
+  border-color: #000000;
+}
 
+.contact-form:hover {
+  border-color: #ff0000;
+}
 
 .contact-form .countryCode{
   gap: 5;
@@ -700,3 +662,42 @@ form{
 }
 
 
+
+footer{
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  
+}
+.footer-container{
+  display: flex;
+  flex-direction:row;
+  justify-content:stretch;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  font-family: Outfit;
+  text-decoration: none;
+}
+
+
+.footer-container a{
+  display: flex;  
+  flex-direction:column;
+  text-decoration: none;
+  align-items: flex-end;
+  justify-content: space-evenly;  
+  color: #fff;
+  gap: 10px;
+}
+.footer-links {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: column;
+  
+  padding: 20px;
+  gap: 20px;
+  font-family: Outfit;
+  text-decoration: none;
+}
