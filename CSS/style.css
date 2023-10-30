@@ -25,7 +25,7 @@ li {
   font-family: Outfit;
 }
 .longcafe {
-  font-size: 24px;
+  font-size: 20px;
 }
 /* Encabezado */
 .nav-bar {
@@ -41,7 +41,12 @@ nav a {
   text-decoration: none;
   color: #fff;
   gap: 10px;
-  padding: 15px 40px;
+  padding: 15px 30px;
+}
+
+.user-container{
+  background: #2B2A2B;
+  padding: 12px 20px;
 }
 .user-container a {
   text-decoration: none;
@@ -256,9 +261,9 @@ button:hover {
   display: inline-block;
   justify-content: center;
   align-items: center;
-  width: 50px; /* Ajusta según tu necesidad */
-  height: 50px; /* Ajusta según tu necesidad */
-  margin-bottom: 15px; /* Espacio entre el ícono y el título */
+  width: 50px; 
+  height: 50px; 
+  margin-bottom: 15px; 
 }
 
 .benefit h3 {
@@ -274,17 +279,13 @@ button:hover {
   flex-direction: column;
 }
 
-
-
-
-
 .producto {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-aroun d;
-  gap: 20px;
+  flex-wrap: wrap;  
+  gap: 20px;  
   padding: 20px;
+  
 }
 
 .caffe-1,
@@ -294,9 +295,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   width: 300px;
-  height: 300px;
+  height: 400px;
   background-color: #f2f2f2;
   border-radius: 10px;
   padding: 20px;
@@ -313,8 +314,10 @@ button:hover {
 
 .caffe-4:hover {
   background-color: #e3ded7;
+  .btn-añadir:hover {
+    background-color: #45a049;
 }
-
+}
 .caffe-1 p,
 .caffe-2 p,
 .caffe-3 p,
@@ -333,7 +336,7 @@ button:hover {
   cursor: pointer;
 }
 .btn-añadir:hover {
-  background-color: #55453e;
+  background-color: #45a049;
   border-radius: 5px;
 
   align-items: flex-start;
@@ -511,6 +514,12 @@ a.next {
  
   }
 
+  .trabajo{
+    display: flex;
+    align-items: baseline
+    
+  }
+
   .contact-info{
     color:#6B7280;
     flex: content;
@@ -536,8 +545,11 @@ a.next {
   font-family: Outfit;
   box-sizing: border-box;
 }
-
+.formulario{
+  height: 600px;
+}
 form{
+ 
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -556,21 +568,23 @@ form{
 }
 
 .contact-form{  
-    height: 500px;
+
+    height: 600px;
     text-align: left;
     padding: 20px;
   display: flex;
   flex-direction: column;  
-  border-radius: 15px;      
+       
     background-color: #f9f9f9;
     border-radius: 10px;
+    color: #374151;
    text-decoration: #374151;
     margin: 0 auto; 
     overflow: auto;
 
 }
 .contact-form:focus-visible{
-  border-color: #084ac4;
+  color: #084ac4;
   outline:#084ac4;
 }
 
@@ -582,7 +596,7 @@ form{
 }
 
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
-  border-color: #d6cfcf;
+  border-color: #154387;
   outline: none;
 }
 .contact-form select:focus{
@@ -603,24 +617,39 @@ form{
   padding: 0px;
 }
 .phone-input-wrapper {
-  display: flex;
+ border-radius: 0px ;
+ display:inline-block;
   gap: 5px;
 }
 
 .phone-input-wrapper select, .phone-input-wrapper input[type="tel"] {
+  display:inline-block;
   flex: 1;
 }
 
+.compilacion{
+  border-radius: 10px;
+}
 .contact-form textarea {
-  height: 500px; 
+  height: 600px; 
   resize: vertical; 
-  color:#FFF;
+  
   border: 2px solid #D1D5DB
   
 
 }
-.contact-form textarea:ho{
-  border-color: #084ac4 solid 1px;
+.contact-form .btn-enviar{
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-around;
+padding: 12px 24px;
+align-items: flex-start;
+gap: 8px;
+text-align: center;
+background: #2A5B45;
+}
+.contact-form textarea:hover{
+  border-color: #e3e6eb solid 1px;
   outline:#084ac4;
   
 }
@@ -628,18 +657,19 @@ form{
 .contact-form button[type="submit"] {
   background-color: #266828; /* verde */
   transition: background-color 0.10s ease;
+  border-radius: 4px;
 }
 
 .contact-form button[type="submit"]:hover {
   background-color: #45a049; /* verde oscuro */
 }
 
-.accept-policy {
-  gap: 5px;
+.accept-poli {
+  gap: 10px;
 }
 
-.accept-policy input[type="checkbox"] {
-  margin-right: 5px;
+.accept-poli input[type="checkbox"] {
+  margin-right: 10px;
 }
 
 
@@ -662,42 +692,75 @@ form{
 }
 
 
-
-footer{
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
+.footer-container {
+    display: flex;
   
-}
-.footer-container{
-  display: flex;
-  flex-direction:row;
-  justify-content:stretch;
-  align-items: center;
-  padding: 20px;
+  text-decoration: none; 
+  background-color: #000;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  font-family: Outfit;
-  text-decoration: none;
+  padding: 20px;
 }
 
+.footer-container.columns-2 {
+  color: #ffff;
+display: flex;
+flex-direction:column-reverse;
+flex-wrap: nowrap;
+align-items:self-end;
+ 
+}
 
-.footer-container a{
-  display: flex;  
-  flex-direction:column;
-  text-decoration: none;
-  align-items: flex-end;
-  justify-content: space-evenly;  
-  color: #fff;
+.footer-logo {
+  display: flex;
+  font-size: 24px;
+width: 288px;
+  gap: 10px;
+ 
+}
+
+.footer-logo img {
+  margin-right: 5px;
+}
+
+.help-section  {
+  margin-bottom: 10px;
+  ;
+  font-family: Outfit;
+font-size: 18px;
+}
+
+.footer-contact-container, .email-container {
+ flex-direction:column;
+  justify-content: flex-start;
+
+  align-items: column;
   gap: 10px;
 }
-.footer-links {
-  display: flex;
 
-  flex-direction: column;
-  justify-content: column;
+.footer-abajo , .footer-poli-links  {
+  list-style-type: none;
+  color: #ffff;
+ 
   
-  padding: 20px;
-  gap: 20px;
-  font-family: Outfit;
+  padding: 0;
+}
+.footer-container,a{
   text-decoration: none;
+  
+}
+
+
+.footer-copy {
+  grid-column: span 4;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.contact-form.footer-poli-links{
+  text-decoration: none;
+  
+  color: #ffff;
 }
