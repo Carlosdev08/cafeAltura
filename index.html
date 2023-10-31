@@ -25,15 +25,18 @@
       <div class="contact-container">
         <img src="assets/IMG/Phone.svg" alt="Teléfono" />
         <span>+34 919 49 05 18</span>
-     
 
-      <div class="user-container">
-        <span><a href="#">Iniciar sesión</a></span>
-        
+        <div class="user-container">
+          <span><a href="#">Iniciar sesión</a></span>
+        </div>
       </div>
-      
-    </div>
-    <div><img class="cars-container" src="assets/IMG/Carr.png" alt="Carrito de compras" /></div>
+      <div>
+        <img
+          class="cars-container"
+          src="assets/IMG/Carr.png"
+          alt="Carrito de compras"
+        />
+      </div>
     </header>
     <section class="centro-banner">
       <div class="banner-content">
@@ -185,68 +188,63 @@
 
     <!-- No necesitas tantas secciones anidadas. -->
     <section class="contact-section">
-      <div class="contact-info">
-        <h3>Entra en contacto con nosotros</h3>
-        <p>
-          Si tienes dudas, ponte en contacto con nosotros a través del
-          formulario y te responderemos lo antes posible.
-        </p>
-        <p>
-          También puedes ponerte en contacto con nosotros en nuestra dirección o
-          a través del teléfono de la tienda.
-        </p>
-
-        <div class="address">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Entra en contacto con nosotros</h3>
           <p>
-            742 Evergreen Terrace 
-            Springfield, OR 12345
+            Si tienes dudas, ponte en contacto con nosotros a través del
+            formulario y te responderemos lo antes posible.
           </p>
+          <p>
+            También puedes ponerte en contacto con nosotros en nuestra dirección
+            o a través del teléfono de la tienda.
+          </p>
+
+          <address>
+            742 Evergreen Terrace<br />
+            Springfield, OR 12345
+          </address>
 
           <div class="phone-email">
             <p>📞 +1(555) 123-4567</p>
             <p>📧 support@example.com</p>
           </div>
+
           <div class="trabajo">
-            <p>¿Buscas un trabajo?</p>
-            <a href="">Ver nuestras ofertas.</a>
+            <p>¿Buscas un trabajo? <a href="#">Ver nuestras ofertas.</a></p>
           </div>
         </div>
       </div>
-
-      <form class="formulario">
-        <div class="contact-form">
-          <label for="Nombre">Nombre Completo</label>
-          <input type="text" id="Nombre" name="Nombre" />
-
-          <label for="Email">Email</label>
-          <input type="text" id="Email" name="Email" />
-          <div class="compilacion">
-          <label for="teléfono">Teléfono</label>
-          <div class="phone-input-wrapper">
-            <select name="countryCode" id="countryCode">
-              <option value="us">US</option>
-              <option value="es">ES</option>
-            </select>
-            <input
-              type="tel"
-              id="teléfono"
-              name="teléfono"
-              placeholder="+1(555) 987-6543"
-            />
-          </div>
-        </div>
-
-          <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
-          <div class="accept-policy">
-            <input type="checkbox" id="checkbox" name="checkbox" />
-            <label
-              >Acepto la <a href="#">Política de Privacidad</a> y los
-              <a href="#">Términos y condiciones</a></label
-            >
-          </div>
-          <button class="btn-enviar" type="submit">Enviar</button>
-        </div>
-      </form>
+      <div class="contact-form">
+        <form class="formulario">
+            <div class="form-group">
+                <label for="iname">Nombre Completo</label>
+                <input type="text" id="iname" name="name" />
+            </div>
+            <div class="form-group">
+                <label for="iemail">Email</label>
+                <input type="email" id="iemail" name="email" />
+            </div>
+            <div class="form-group">
+                <label for="teléfono">Teléfono</label>
+                <div class="phone-input-wrapper">
+                    <select name="countryCode" id="countryCode">
+                        <option value="us">US</option>
+                        <option value="es">ES</option>
+                    </select>
+                    <input type="tel" id="teléfono" name="teléfono" placeholder="+1(555) 987-6543" />
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+            <div class="accept-policy form-group">
+                <input type="checkbox" id="checkbox" name="checkbox" />
+                <label>Acepto la <a href="#">Política de Privacidad</a> y los <a href="#">Términos y condiciones</a></label>
+            </div>
+            <button class="btn-enviar" type="submit" value="enviar">Enviar</button>
+        </form>
+    </div>
     </section>
 
     <footer>
@@ -284,15 +282,15 @@
         </div>
         <!-- Policy Links -->
         <div class="footer-poli-links">
-          <div >
-          <ul>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Política de cookies</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-          </ul>
+          <div>
+            <ul>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Política de cookies</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+          </div>
         </div>
-        </div>
-      
+
         <!-- Copyright -->
         <div class="footer-copy">
           <span>Todos los derechos reservados - Café de Altura SL - 2022</span>
