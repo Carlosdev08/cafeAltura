@@ -11,47 +11,45 @@ html {
   font-family: Outfit;
 }
 
-h1,
-h2,
-h3,
-p,
-ul,
+
 li {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
+  
+ 
   list-style: none;
   font-family: Outfit;
 }
 .longcafe {
-  font-size: 20px;
+  display: flex;
+  font-size: 23px;
+
 }
 /* Encabezado */
 .nav-bar {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  display: flex; 
+ flex-direction: row;
+  flex-wrap: wrap;
+  align-content:space-around;
+  justify-content: space-around;
+  padding: 4px;
+  text-decoration: none;
+  gap: 8  px;
   background-color: #333;
   color: #fff;
 }
 nav a {
   text-decoration: none;
   color: #fff;
-  gap: 10px;
-  padding: 15px 30px;
+ 
 }
 
 .user-container{
   background: #2B2A2B;
-  padding: 12px 20px;
+  gap: 6px;
 }
 .user-container a {
   text-decoration: none;
   color: #fff;
-  padding: 15px 40px;
+  
 }
 
 .logo-container,
@@ -59,16 +57,16 @@ nav a {
 .user-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
-.desplegable ul {
+.nvaba-desplegable ul {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  justify-content: space-between;
+  gap: 8px;
 }
 
-.desplegable li {
+.nvaba-desplegable li {
   cursor: pointer;
   line-height: 16px;
   justify-content: space-between;
@@ -298,33 +296,27 @@ button:hover {
   align-items: center;  
   width: 300px;
   height: 400px;
-  background-color: #f2f2f2;
+  background-color: #f1f0ee;
   border-radius: 10px;
   padding: 20px;
 }
 
-.caffe-1 img,
-.caffe-2 img,
-.caffe-3 img,
-.caffe-4 img {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-}
+
 
 .caffe-4:hover {
-  background-color: #e3ded7;
+  background: #e4dfd8;
   .btn-añadir:hover {
-    background-color: #45a049;
+    color: #114813;
 }
 }
-.caffe-1 p,
-.caffe-2 p,
-.caffe-3 p,
-.caffe-4 p {
-  padding: px;
-  flex: 1 0 0;
+.caffe-4:focus {	
+  background: #9a6d2f;
+  .btn-añadir:focus {
+    color: #45a049;
+
+  }
 }
+
 
 .btn-añadir {
   background-color: #034724;
