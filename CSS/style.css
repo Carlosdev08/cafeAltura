@@ -12,15 +12,16 @@ html {
 }
 
 
-li {
+li >a{
   
  
   list-style: none;
+  text-decoration: none;
   font-family: Outfit;
 }
 .longcafe {
   display: flex;
-  font-size: 23px;
+  font-size: 22px;
 
 }
 /* Encabezado */
@@ -30,26 +31,37 @@ li {
   flex-wrap: wrap;
   align-content:space-around;
   justify-content: space-around;
-  padding: 4px;
+  align-items: center;
   text-decoration: none;
-  gap: 8  px;
+  gap: 8px;
   background-color: #333;
   color: #fff;
 }
-nav a {
+nav,ul a {
   text-decoration: none;
   color: #fff;
  
 }
 
-.user-container{
-  background: #2B2A2B;
-  gap: 6px;
+.user-container {
+  padding: 12px;
+  text-decoration: none;
+  background-color: #515051;
+  color: #fff;
+  gap: 3px;
+ 
+}
+.cars-container{
+  display: flex;
+ flex-direction: row;
+ gap: 8px;
 }
 .user-container a {
   text-decoration: none;
   color: #fff;
+  padding: 25px;
   
+ 
 }
 
 .logo-container,
@@ -72,30 +84,33 @@ nav a {
   justify-content: space-between;
   display: inline-block;
 }
-.desplegable ul li:last-child {
-  margin-right: 0;
-}
+
 /* Banner central */
 .centro-banner {
-  padding: 48px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: 20px;
   font-style: normal;
 
-  gap: 20px;
+  .benefits-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
 }
 .banner-content p {
   display: flex;
   font-size: 20px;
   line-height: 30px;
-  gap: 30px;
+  gap: 10px;
 
   font-family: Outfit;
 }
 .banner-content h1 {
-  font-size: 70px;
+  font-size: 39px;
 
   font-family: Outfit;
 }
@@ -111,8 +126,9 @@ nav a {
   padding-right: 50px;
   gap: 20px;
 }
-.banner-image {
-  flex-basis: 40%; /* para el tamaño de la imagen */
+.banner-content.banner-image {
+  flex-basis: 45%; 
+  display: flex;
 }
 
 .banner-image img {
@@ -186,6 +202,10 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: justify;
+  gap: 20px;
+}
+.benefits-section#default{
+  text-align:start
 }
 
 .parrafocaf {
@@ -214,41 +234,21 @@ button:hover {
   align-items: flex-end;
 }
 .icono {
-  padding: 10px;
-  display: flex;
+  gap: 20px;
+  padding: 15px;
+  display:flex ;
   align-items: center;
   flex-direction: column;
 }
 
+
+
 .benefit {
-  font-size: center;
-  flex-direction: column;
+  display:block;
+  justify-content:space-around;
   border-radius: 8px;
-  width: 300px;
-  gap: 20px;
-  height: 300px;
-  align-items: center;
-  border: 1px solid #f7f5f3;
-  background: #fff;
-  box-shadow: 0px 1px 4px 0px rgba(227, 222, 215, 0.8);
-}
-.benefit {
-  justify-content: stretch;
-  border-radius: 8px;
-  width: 300px;
-  gap: 20px;
-  height: 300px;
-  align-items: center;
-  border: 1px solid #f7f5f3;
-  background: #fff;
-  box-shadow: 0px 1px 4px 0px rgba(227, 222, 215, 0.8);
-}
-.benefit {
-  justify-content: stretch;
-  border-radius: 8px;
-  width: 300px;
-  gap: 20px;
-  height: 300px;
+  width: 370px;   
+  height: 390px;
   align-items: center;
   border: 1px solid #f7f5f3;
   background: #fff;
@@ -462,10 +462,11 @@ h3 {
 
 .coffee-shop-section {
   display: flex;
-  flex-direction: center;
-  gap: 40px;
-
-  padding: 50px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items:center;
+  gap: 20px; 
 }
 
 .coffee-shop-content {
@@ -477,13 +478,13 @@ h3 {
   font-family: Outfit;
 }
 
-.coffee-shop-content,
+ .coffee-shop-content,
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   padding: 40px;
-
-  font-family: Outfit;
-}
+/* 
+  font-family: Outfit; */
+} 
 
 a.next {
   font-size: 20px;
@@ -497,9 +498,14 @@ a.next {
 
 .contact-section{
   padding: 20px;
-  background-color:#E3DED7;
+  background-color: #E3DED7;
+  color: #6B7280;
+  font-size: 14px;
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   gap: 40px;
   line-height: 24px
   
@@ -513,7 +519,7 @@ a.next {
   }
 
   .contact-info{
-    color:#6B7280;
+    color:#585b61;
     flex: content;
     flex-flow: column;
   }
@@ -537,9 +543,7 @@ a.next {
   font-family: Outfit;
   box-sizing: border-box;
 }
-.formulario{
-  height: 600px;
-}
+
 form{
  
   display: flex;
@@ -556,7 +560,7 @@ form{
 
 .contact-form {
   position: relative;
-  top: calc(3);
+  top: calc(4);
 }
 
 .contact-form{  
