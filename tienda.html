@@ -4,19 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tienda</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <style>
-      .tienda {
-        display: flex;
-        flex-direction: column;
-      }
-      .producto {
-        display: flex;
-        flex-direction: row;
 
-        justify-content: space-between;
-      }
-    </style>
+    <link rel="stylesheet" href="./CSS/style2.css" />
   </head>
   <body>
     <header class="nav-bar">
@@ -25,8 +14,8 @@
         <span class="longcafe">cafedealtura.com</span>
         <img src="assets/IMG/ps_coffee-hot.png" alt="Café Altura logo" />
       </div>
-      <nav class="nvaba-desplegable">
-        <ul>
+      <nav>
+        <ul class="nvaba-desplegable">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="#">Suscripción</a></li>
           <li><a href="#">Para empresa</a></li>
@@ -50,61 +39,170 @@
         />
       </div>
     </header>
+    <main>
+      <section>
+        <h2 class="novedad">Últimos orígenes</h2>
 
-    <main class="tienda">
-      <div>
-        <h2>Últimos orígenes</h2>
-
-        <div class="producto">
-          <div class="caffe caffe-1">
-            <img src="assets/IMG/cafes/Images.svg" alt="cafecito" />
-            <p>Costa Rica Tarrazú</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
-          </div>
-          <div class="caffe caffe-2">
-            <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
-            <p>Colombia Los Naranjos</p>
-            <p>9,00€</p>
-            <button class="btn-añadir">Añadir</button>
+        <div class="productos-container">
+          <div class="producto">
+            <div class="caffe-1">
+              <img src="assets/IMG/cafes/Images.svg" alt="cafecito" />
+              <p>Costa Rica Tarrazú</p>
+              <p>9,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-2">
+              <img src="assets/IMG/cafes/Coffee bag.png" alt="cafecito" />
+              <p>Colombia Los Naranjos</p>
+              <p>9,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-3">
+              <img src="assets/IMG/cafes/Images.png" alt="cafecito" />
+              <p>Laos Amanecer</p>
+              <p>9,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-4">
+              <img src="assets/IMG/cafes/Images (1).png" alt="cafecito" />
+              <p>Etiopía Yrgacheff</p>
+              <p>9,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-5">
+              <img src="assets/IMG/cafes/Kenia Ndunduri.png" alt="cafecito" />
+              <p>Kenia Ndunduri</p>
+              <p>15,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-6">
+              <img src="assets/IMG/cafes/Etiopía Sidamo.png" alt="cafecito" />
+              <p>Etiopía Sidamo</p>
+              <p>17,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-7">
+              <img
+                src="assets/IMG/cafes/Costa Rica Monte Bello.png"
+                alt="cafecito"
+              />
+              <p>Costa Rica Monte Bello</p>
+              <p>12,00€</p>
+              <button class="btn-añadir">Añadir</button>
+            </div>
+            <div class="caffe-8">
+              <img
+                src="assets/IMG/cafes/Colombia La Casita.SVG"
+                alt="cafecito"
+              />
+              <p>Colombia La Casita</p>
+              <div id="opacity">
+                <p>9,00€</p>
+                <button class="btn-añadir">Agotado</button>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <section class="benefits-section">
+        <div class="center"></div>
+        <h2>Café con las mejores condiciones</h2>
+        <div class="center"></div>
+        <div class="caja">
+          <div class="benefit">
+            <div class="icono">
+              <img
+                src="/assets/IMG/Illustration (1).png"
+                alt="Ícono de pedido"
+              />
+            </div>
+            <h3 id="default">Recibe tu pedido sin preocuparte</h3>
+            <p clas="parrafocaf">
+              Tienes cosas más importantes en la cabeza, por eso con nuestra
+              suscripción de café, nunca te quedarás sin tu taza de la mañana.
+            </p>
+          </div>
+          <div class="benefit">
+            <div class="icono">
+              <img
+                src="/assets/IMG/Illustration (2).png"
+                alt="Ícono de envío"
+              />
+            </div>
+            <h3>Envío en 24/48h</h3>
+            <p clas="parrafocaf">
+              Pide tu café antes de las 12h y lo recibirás al día siguiente.
+            </p>
+          </div>
+          <div class="benefit">
+            <div class="icono">
+              <img
+                src="/assets/IMG/Illustration (3).png"
+                alt="Ícono de descuento"
+              />
+            </div>
+            <h3>Descuentos y beneficios</h3>
+            <p clas="parrafocaf">
+              Cada dos meses, te regalamos una bolsa de un nuevo origen
+              sorpresa, para que lo descubras junto a nosotros.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="columns-1">
+            <div class="footer-logo">
+              <span>cafedealtura.com</span>
+              <img src="assets/IMG/ps_coffee-hot.png" alt="Café Altura logo" />
+            </div>
+
+            <!-- Help Section -->
+            <div class="help-section">
+              <h3>Te ayudamos en</h3>
+              <div class="contact-cafealtura">
+                <img src="assets/IMG/Phone.svg" alt="Teléfono" />
+                <span>+34 919 49 05 18</span>
+              </div>
+              <div class="contact-cafealtura">
+                <span
+                  ><img
+                    src="assets/IMG/Mail.svg"
+                    alt=""
+                  />hola@cafedealtura.com</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Navigation Links -->
+
+          <div class="footer-abajo">
+            <div class="sobrenosotros">
+              <ul>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Suscripción</a></li>
+                <li><a href="#">Para empresas</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Policy Links -->
+          <div class="footer-poliica">
+            <div class="politica">
+              <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Copyright -->
+        </div>
+        
+      </footer>
+      <div id="copyrigth">
+        <span>Todos los derechos reservados - Café de Altura SL - 2022</span>
       </div>
     </main>
   </body>
